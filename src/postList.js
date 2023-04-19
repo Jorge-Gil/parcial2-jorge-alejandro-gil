@@ -14,15 +14,18 @@ function PostList() {
   }, [dispatch]);
 
   return (
-    <div>
-      <h2>Lista de posts</h2>
-     
-      <ul>
-        {posts.map(post => (
-          <li key={post.id}>{post.title}{post.userId}{post.body}</li>
-        ))}
-      </ul>
-    </div>
+    <div className="bg-gray-200 p-4">
+    <h2 className="font-semibold">Lista de posts</h2>
+      
+    <ul>
+      {posts.map(post => (
+        <li className="text-center font-bold text-red-600" key={post.id}>
+          {post.title} {post.userId} {post.body}
+        </li>
+      ))}
+    </ul>
+  </div>
+  
   );
 }
 
