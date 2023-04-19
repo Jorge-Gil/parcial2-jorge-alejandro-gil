@@ -15,7 +15,7 @@ function PostList() {
 
   return (
     <div className="bg-gray-200 p-4">
-    <h2 className="font-semibold">Lista de posts</h2>
+    <h1 className="font-semibold text-xl">Lista de posts</h1>
       
     <ul>
       {posts.map(post => (
