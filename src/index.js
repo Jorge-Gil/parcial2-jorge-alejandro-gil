@@ -3,15 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import PostList from './postList';
 import { Provider } from "react-redux";
+// import {store} from './store'
 import {store} from './store'
+import Posts from './Posts'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <PostList/>
+    {/* <PostList/> */}
+    <Posts/>
     </Provider>
   </React.StrictMode>
 );
